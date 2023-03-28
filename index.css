@@ -42,14 +42,14 @@ a {
   color: rgba(0, 0, 0, 1);
   cursor: pointer;
 }
-h1 {
+.quote {
   font-size: 20px;
   font-weight: 400;
   line-height: 24.2px;
   margin: 28px 23px 7px 33px;
 }
 
-h2 {
+.quote-author {
   font-weight: 600;
   font-size: 18px;
   line-height: 21.78px;

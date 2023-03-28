@@ -26,3 +26,9 @@ button.addEventListener("click", function () {
   getRandomImage();
   render();
 });
+
+window.addEventListener("load", function () {
+  indexQuote = Math.floor(Math.random() * quotes.length);
+  getRandomImage();
+  render();
+});
