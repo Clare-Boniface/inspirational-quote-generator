@@ -14,19 +14,15 @@ function getRandomImage() {
 
 let indexQuote = Math.floor(Math.random() * quotes.length);
 
-function renderQuote() {
+function render() {
   let quote = quotes[indexQuote].quote;
-  mainQuote.textContent = quote;
-}
-
-function renderAuthor() {
   let author = quotes[indexQuote].author;
+  mainQuote.textContent = quote;
   quoteAuthor.textContent = author;
 }
 
 button.addEventListener("click", function () {
   indexQuote = Math.floor(Math.random() * quotes.length);
   getRandomImage();
-  renderQuote();
-  renderAuthor();
+  render();
 });
