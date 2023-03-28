@@ -19,16 +19,10 @@ function render() {
   let author = quotes[indexQuote].author;
   mainQuote.textContent = quote;
   quoteAuthor.textContent = author;
+  indexQuote = Math.floor(Math.random() * quotes.length);
+  getRandomImage();
 }
 
-button.addEventListener("click", function () {
-  indexQuote = Math.floor(Math.random() * quotes.length);
-  getRandomImage();
-  render();
-});
+button.addEventListener("click", render);
 
-window.addEventListener("load", function () {
-  indexQuote = Math.floor(Math.random() * quotes.length);
-  getRandomImage();
-  render();
-});
+window.addEventListener("load", render);
